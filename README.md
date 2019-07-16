@@ -1,7 +1,13 @@
 # uptimestats
 A small tool to gather and diagnose Node.js server uptime statistics
 
-### How to use
+### Install
+
+```bash
+$ npm install uptimestats --save
+```
+
+### Usage
 
 The module exports only one function `stats()`;
 
