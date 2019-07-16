@@ -1,0 +1,43 @@
+{
+  "name": "nodestats",
+  "version": "1.0.0",
+  "description": "A small tool to gather and diagnose Node.js server uptime statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --runInBand",
+    "test-cov": "jest --verbose --runInBand --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/audiowaves/nodestats"
+  },
+  "homepage": "https://github.com/audiowaves/nodestats",
+  "author": "Oleh",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "24.8.0"
+  },
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "coverageDirectory": ".coverage",
+    "coverageReporters": [
+      "lcov"
+    ],
+    "globals": {
+      "NODE_ENV": "test",
+      "JEST_USE_BASENAME_FOR_CACHING": false
+    },
+    "modulePathIgnorePatterns": [
+      "node_modules/"
+    ],
+    "roots": [
+      "<rootDir>/lib/"
+    ],
+    "cacheDirectory": "<rootDir>/.jestcache"
+  }
+}

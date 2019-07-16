@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# Optional directories
+.coverage
+.jestcache
+.idea
