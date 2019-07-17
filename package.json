@@ -1,6 +1,6 @@
 {
   "name": "uptimestats",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A small tool to gather and diagnose Node.js server uptime statistics",
   "main": "index.js",
   "scripts": {
